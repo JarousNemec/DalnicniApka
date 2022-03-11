@@ -1,4 +1,5 @@
 ﻿using System;
+using DalnicniApka.Utils;
 
 namespace DalnicniApka
 {
@@ -14,10 +15,13 @@ namespace DalnicniApka
                 return;
             }
             Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Print all records:");
             RecordsPrinter.PrintRecords(rcm.GetRecords());
             Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Print records from lowest date:");
             RecordsPrinter.PrintByLowestDate(rcm.GetRecords());
             Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Print records from highest date:");
             RecordsPrinter.PrintByHighestDate(rcm.GetRecords());
             Console.ReadKey();
         }

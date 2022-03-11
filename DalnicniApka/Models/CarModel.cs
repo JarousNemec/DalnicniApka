@@ -21,7 +21,7 @@ namespace DalnicniApka.Models
 
         public string GetDetails()
         {
-            return $"SPZ: {Spz}, Color: {Color}, Speed: {Speed}, Type: {Vehicle}";
+            return $"Date: {Date} - SPZ: {Spz}, Color: {Color}, Speed: {Speed} km/h, Type: {Vehicle}";
         }
     }
 
